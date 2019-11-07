@@ -9,34 +9,61 @@ class Hero extends React.Component {
       height3: 200,
       height4: 200
     },
-    winner: {
-      hero0: 0,
-      hero1: 0,
-      hero2: 0,
-      hero3: 0,
-      hero4: 0
-    }
+    choice: 0
   }
 
   expandDeku = (hero) => {
-    this.setState({ heights: { height0: 300 } })
+    this.setState({ heights: {
+      height0: 300,
+      height1: 200,
+      height2: 200,
+      height3: 200,
+      height4: 200 },
+    choice: 1
+    })
   }
   expandAllMight = (hero) => {
-    this.setState({ heights: { height1: 300 } })
+    this.setState({ heights: {
+      height0: 200,
+      height1: 300,
+      height2: 200,
+      height3: 200,
+      height4: 200 },
+    choice: 2
+    })
   }
   expandBakugo = (hero) => {
-    this.setState({ heights: { height2: 300 } })
+    this.setState({ heights: {
+      height0: 200,
+      height1: 200,
+      height2: 300,
+      height3: 200,
+      height4: 200 },
+    choice: 3 })
   }
   expandOchaco = (hero) => {
-    this.setState({ heights: { height3: 300 } })
+    this.setState({ heights: {
+      height0: 200,
+      height1: 200,
+      height2: 200,
+      height3: 300,
+      height4: 200 },
+    choice: 4 })
   }
   expandTodoroki = (hero) => {
-    this.setState({ heights: { height4: 300 } })
+    this.setState({ heights: {
+      height0: 200,
+      height1: 200,
+      height2: 200,
+      height3: 200,
+      height4: 300 },
+    choice: 5
+    })
   }
 
   render () {
     return (
-      <React.Fragment>
+      <div>
         <h2>Hero's up, on a tuesday</h2>
 
         <div onClick={this.expandDeku} >
@@ -59,7 +86,7 @@ class Hero extends React.Component {
           <img src="/Images/Heros/Todoroki.jpeg" alt="deku" height={this.state.heights.height4} width="Auto" />
         </div>
 
-      </React.Fragment>
+      </div>
     )
   }
 }
