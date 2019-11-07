@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Win = () => {
-  console.log('THIS IS THE WIN PAGE')
+
   return (
 
     <div >
@@ -12,7 +12,6 @@ const Win = () => {
         <button>Play Again</button>
       </Link>
     </div>
-
   )
 }
 
