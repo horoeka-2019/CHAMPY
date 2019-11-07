@@ -8,7 +8,7 @@ const Start = () => {
         <img className="startImg" src="/Images/draw.jpg" />
       </div>
       <Link to="/game">
-        <input type="submit" className="startButton" value="start"></input>
+        <input type="submit" className="startButton" value="START"></input>
       </Link>
     </React.Fragment>
   )
