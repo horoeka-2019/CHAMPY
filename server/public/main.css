@@ -24,3 +24,25 @@
 body{
     overflow: hidden;
 }
+
+.resultHeading{
+    color: blue;
+    margin: auto;
+    text-align: center;  
+}
+
+.villainsWin {
+    position: absolute;
+    top:0;
+    left:0;
+    height:100vh;
+    z-index:-100;
+}
+.draw {
+    position: absolute;
+    top:0;
+    left:0;
+    height:100vh;
+    width: 100vw;
+    z-index:-100;
+}
