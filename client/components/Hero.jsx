@@ -1,13 +1,13 @@
-import react from 'react'
+import React from 'React'
 
 const Hero = (props) => {
   return (
     <React.Fragment>
       <div>
-        <img />
+        <img src="../../server/public/Images/Heros/Deku.jpeg" height="40" width="Auto" />
       </div>
-      
-      <div>
+
+      {/* <div>
         <img />
       </div>
 
@@ -21,8 +21,8 @@ const Hero = (props) => {
 
       <div>
         <img />
-      </div>
-b
+      </div> */}
+
     </React.Fragment>
   )
 }
