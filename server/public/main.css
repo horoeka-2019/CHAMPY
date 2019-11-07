@@ -12,3 +12,15 @@
     border-color: grey;
     transition: all 0.3s ease 0s;
 }
+
+.heroesWin {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100vw;
+    z-index:-100;
+}
+
+body{
+    overflow: hidden;
+}
