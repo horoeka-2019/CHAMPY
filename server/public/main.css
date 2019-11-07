@@ -1,15 +1,29 @@
+
+/* START PAGE */
+/* START PAGE */
+/* START PAGE */
+
 .startButton {
-    color:black;
-    border: 3px solid black;
+    height:100px;
+    width:400px;
+    color:white;
+    border: 10px solid white;
     border-radius: 6px;
     display: inline-block;
     transition: all 0.3s ease 0s;
+    position:absolute;
+    top:300px;
+    left:400px;
+    font-size:280%;
+    font-weight:bold;
+    background-color:rgb(83, 82, 82)
 }
 
+
 .startButton:hover {
-    color:grey;
+    color:yellow;
     border-radius: 40px;
-    border-color: grey;
+    border-color: yellow;
     transition: all 0.3s ease 0s;
 }
 
