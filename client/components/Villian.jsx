@@ -55,7 +55,7 @@ class Villian extends React.Component {
   }
   expandDabi = (hero) => {
     console.log(5)
-    console.log('BEFORE this.villianNum',this.villianNum)
+    console.log('BEFORE this.villianNum', this.villianNum)
     this.setState({ heights: {
       height0: 200,
       height1: 200,
@@ -64,14 +64,13 @@ class Villian extends React.Component {
       height4: 300 },
     villianNum: 5
     })
-    console.log('this.villianNum',this.villianNum)
+    console.log('this.villianNum', this.villianNum)
   }
 
   evaluateWinner = () => {
     // this.props.determineWinner(this.props.choice, this.props.villianNum)
-    console.log('this.props',this.props)
-    console.log('this.props.villianNum',this.props.villianNum)
-    console.log(this.props.determineWinner(this.props.choice, this.state.villianNum))
+
+    this.props.determineWinner(this.props.choice, this.state.villianNum)
   }
 
   // getRandomNumber = (min, max) => {
@@ -96,7 +95,7 @@ class Villian extends React.Component {
 
   render () {
     console.log(this.props)
-    console.log('this',this)
+    console.log('this', this)
     return (
       <React.Fragment>
         <h2>Hero's up, on a tuesday</h2>
