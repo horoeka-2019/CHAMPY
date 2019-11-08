@@ -1,10 +1,18 @@
 import React from 'react'
-import { mount } from 'enzyme'
+import { shallow } from 'enzyme'
+import { MemoryRouter as Router } from 'react-router-dom'
 
-import App from '../client/components/App'
+import Lose from '../client/components/Lose'
+import Win from '../client/components/Win'
 
-test('<App />', () => {
-  const expected = 'React development has begun!'
-  const wrapper = mount(<App />)
-  expect(wrapper.text()).toMatch(expected)
+test('<Lose /> contains a button with the correct class name', () => {
+
+  const wrapper = shallow(<Lose />)
+  expect(wrapper.find('button').hasClass('startButton')).toBeTruthy()
+})
+
+test('<Win /> contains a button with the correct class name', () => {
+
+  const wrapper = shallow(<Win />)
+  expect(wrapper.containsMatchingElement(<h1 className="resultHeading">You Win!</h1>)).toBeTruthy()
 })
