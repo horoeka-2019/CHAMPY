@@ -3,6 +3,9 @@ import Hero from './Hero'
 
 const Game = (props) => {
 
+  const determineWinner = (heroChoice, villanChoice) =>{
+    
+  }
 
   return (
     <React.Fragment>
