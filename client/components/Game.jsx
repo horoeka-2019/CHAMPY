@@ -2,7 +2,6 @@ import React from 'react'
 import Hero from './Hero'
 
 const Game = (props) => {
-
   const determineWinner = (heroChoice, villanChoice) => {
     if (heroChoice === 1 && villanChoice === 1) {
       setTimeout(() => { location.href = '#/draw' }, 2000)
@@ -81,11 +80,14 @@ const Game = (props) => {
     }
   }
 
-
   return (
     <React.Fragment>
-      <h1>Im here boi </h1>
-      <Hero determineWinner={determineWinner} />
+      <div className="gameBackground">
+        <div >
+          <h1 className="bubble">Im here boi </h1>
+          <Hero determineWinner={determineWinner} />
+        </div>
+      </div>
 
     </React.Fragment>
   )
