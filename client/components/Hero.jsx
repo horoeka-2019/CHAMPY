@@ -1,4 +1,5 @@
 import React from 'react'
+import Villian from './Villian'
 
 class Hero extends React.Component {
   state = {
@@ -85,6 +86,9 @@ class Hero extends React.Component {
         <div onClick={this.expandTodoroki}>
           <img src="/Images/Heros/Todoroki.jpeg" alt="deku" height={this.state.heights.height4} width="Auto" />
         </div>
+
+        <Villian />
+
 
       </div>
     )
