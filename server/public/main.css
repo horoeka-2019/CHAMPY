@@ -11,21 +11,47 @@
     border-radius: 6px;
     display: inline-block;
     transition: all 0.3s ease 0s;
-    position:absolute;
-    top:300px;
-    left:400px;
     font-size:280%;
     font-weight:bold;
-    background-color:rgb(83, 82, 82)
+    background-color:rgba(250, 248, 248, 0.24);
+    /* margin-top:50vh; */
+    margin-top:20%;
 }
 
+
+.container {
+    width: 100%;
+    height:100%;
+    text-align: center;
+    vertical-align: middle
+}
 
 .startButton:hover {
     color:yellow;
     border-radius: 40px;
     border-color: yellow;
     transition: all 0.3s ease 0s;
+    background-color:rgba(128, 128, 128, 0.507)
 }
+
+.startImg {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100vw;
+    z-index:-100;
+}
+
+/* .startWrapper {
+    text-align: justify;
+} */
+
+
+
+/* WIN & LOSE & DRAW  */
+/* WIN & LOSE & DRAW  */
+/* WIN & LOSE & DRAW  */
+   
 
 /* css below is for routes win lose and draw */
 .heroesWin {
@@ -38,6 +64,8 @@
 
 body{
     overflow: hidden;
+    width:100%;
+    height:100%;
 }
 
 .resultHeading{
