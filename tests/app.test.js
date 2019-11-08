@@ -1,6 +1,5 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import { MemoryRouter as Router } from 'react-router-dom'
 
 import Lose from '../client/components/Lose'
 import Win from '../client/components/Win'
