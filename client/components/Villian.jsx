@@ -44,11 +44,12 @@ class Villian extends React.Component {
         height2: 200,
         height3: 200,
         height4: 200 },
-      choice: random
+      vilchoice: random
     })
   }
 
   render () {
+    console.log(this.props)
     return (
       <React.Fragment>
         <h2>Hero's up, on a tuesday</h2>
@@ -72,7 +73,7 @@ class Villian extends React.Component {
         <div onClick={this.expandDabi}>
           <img src="/Images/Villians/Dabi.jpeg" alt="deku" height={this.state.height4} width="Auto" />
         </div>
-        <button onClick={this.getRandomNumber}> randy</button>
+        <button onClick={this.assignVillain}> randy</button>
       </React.Fragment>
     )
   }
