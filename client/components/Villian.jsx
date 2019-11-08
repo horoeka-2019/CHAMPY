@@ -2,12 +2,14 @@ import React from 'react'
 
 class Villian extends React.Component {
   state = {
-    height0: 200,
-    height1: 200,
-    height2: 200,
-    height3: 200,
-    height4: 200
-
+    heights: {
+      height0: 200,
+      height1: 200,
+      height2: 200,
+      height3: 200,
+      height4: 200
+    },
+    vilchoice: 0
   }
 
   expandShigaraki = (hero) => {
@@ -26,11 +28,25 @@ class Villian extends React.Component {
     this.setState({ height4: 300 })
   }
 
-  // randomNumber = () => {
-  //   const Randy = Math.randomNumber()
+  getRandomNumber = (min, max) => {
+    min = Math.ceil(1)
+    max = Math.floor(5)
+    return Math.floor(Math.random() * (max - min + 1)) + min
+  }
 
-  //   console.log(Randy)
-  // }
+  AssignVillain = () => {
+    const random = this.getRandomNumber
+      
+    this.setState({
+      heights: {
+        height0: 200,
+        height1: 200,
+        height2: 200,
+        height3: 200,
+        height4: 200 },
+      choice: random
+    })
+  }
 
   render () {
     return (
@@ -56,7 +72,7 @@ class Villian extends React.Component {
         <div onClick={this.expandDabi}>
           <img src="/Images/Villians/Dabi.jpeg" alt="deku" height={this.state.height4} width="Auto" />
         </div>
-
+        <button onClick={this.getRandomNumber}> randy</button>
       </React.Fragment>
     )
   }

@@ -10,7 +10,7 @@ class Hero extends React.Component {
       height3: 200,
       height4: 200
     },
-    choice: 0
+    herchoice: 0
   }
 
   expandDeku = (hero) => {
@@ -22,6 +22,7 @@ class Hero extends React.Component {
       height4: 200 },
     choice: 1
     })
+ 
   }
   expandAllMight = (hero) => {
     this.setState({ heights: {
@@ -32,6 +33,7 @@ class Hero extends React.Component {
       height4: 200 },
     choice: 2
     })
+  
   }
   expandBakugo = (hero) => {
     this.setState({ heights: {
@@ -87,8 +89,7 @@ class Hero extends React.Component {
           <img src="/Images/Heros/Todoroki.jpeg" alt="deku" height={this.state.heights.height4} width="Auto" />
         </div>
 
-        <Villian />
-
+        <Villian choice = {this.state.choice}/>
 
       </div>
     )
