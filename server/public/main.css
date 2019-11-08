@@ -3,6 +3,7 @@
 /* START PAGE */
 /* START PAGE */
 
+
 .startButton {
     height:100px;
     width:400px;
@@ -13,11 +14,25 @@
     transition: all 0.3s ease 0s;
     font-size:280%;
     font-weight:bold;
+    /* background-color:rgba(250, 248, 248, 0.24); */
+    background-color:rgba(138, 138, 138, 0.54);
+    /* margin-top:50vh; */
+    margin-top:17%;
+}
+.startButton.win{
+    height:100px;
+    width:400px;
+    color:black;
+    border: 10px solid black;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    font-size:280%;
+    font-weight:bold;
     background-color:rgba(250, 248, 248, 0.24);
     /* margin-top:50vh; */
-    margin-top:20%;
+    margin-top:17%;
 }
-
 
 .container {
     width: 100%;
@@ -78,6 +93,7 @@ body{
     font-weight:bold;
     background-color:rgb(83, 82, 82) 
 }
+
 
 .villainsWin {
     position: absolute;
