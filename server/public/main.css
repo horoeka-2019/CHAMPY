@@ -3,6 +3,11 @@
 /* START PAGE */
 /* START PAGE */
 
+* {
+    margin: 0px;
+    /* background-image: linear-gradient(to right, #FDFF68,#ff6868); */
+
+}
 
 .startButton {
     height:100px;
@@ -61,11 +66,41 @@
     text-align: justify;
 } */
 
+.confirmBtn{
+
+    height:100px;
+    width:400px;
+    color:white;
+    border: 10px solid white;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    font-size:280%;
+    font-weight:bold;
+    /* background-color:rgba(250, 248, 248, 0.24); */
+    background-color:rgba(138, 138, 138, 0.54);
+    /* margin-top:50vh; */
+    /* position:absolute; */
+
+    margin:-225%;
+}
+
+
+.confirmBtn:hover{
+    color:yellow;
+    border-radius: 40px;
+    border-color: yellow;
+    transition: all 0.3s ease 0s;
+    background-color:rgba(128, 128, 128, 0.507)
+}
+
 
 /*GAME PAGE*/
 .gameBackground {
-    background-image: linear-gradient(to right, rgb(248, 248, 126),rgb(243, 108, 108));
-    
+    background-image: linear-gradient(to right, #FDFF68,#ff6868);
+    display:inline-block;
+    width: 100vw;
+    height: 100vh;
 }
 
 .bubble {
@@ -113,7 +148,7 @@
 }
 
 body{
-    overflow: hidden;
+    /* overflow: hidden; */
     width:100%;
     height:100%;
 }
@@ -144,4 +179,31 @@ body{
     height:100vh;
     width: 100vw;
     z-index:-100;
+}
+
+.test {
+    width: 100vw;
+    height: 100vh;
+    /* background-image: linear-gradient(to right, #FDFF68,#ff6868); */
+
+}
+
+.heroesContainer{
+    width: 50%;
+    /* display: flex; */
+    flex-direction: row;
+    float: left;
+    height: 100vh;
+}
+
+.villiansContainer{
+    /* display: flex; */
+    /* flex-direction: row; */
+    float: right;
+    height: 100vh;
+}
+
+.column {
+    display: flex;
+    flex-direction: column
 }

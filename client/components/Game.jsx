@@ -84,8 +84,8 @@ const Game = (props) => {
     <React.Fragment>
       <div className="gameBackground">
         <div >
-          <h1 className="bubble">Im here boi </h1>
-          <Hero determineWinner={determineWinner} />
+          {/* <h1 className="bubble">Im here boi </h1> */}
+            <Hero determineWinner={determineWinner} />
         </div>
       </div>
 
