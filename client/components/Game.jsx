@@ -4,10 +4,6 @@ import Villian from './Villian'
 
 const Game = (props) => {
 
-  // const determineWinner =(heroChoice, VillianChaoice)=>{
-  //   if (heroChoice === 1)
-  
-  // }
 
   return (
     <React.Fragment>
