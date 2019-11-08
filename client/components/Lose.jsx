@@ -7,7 +7,7 @@ const Lose = () => {
       <img className="villainsWin" src="/Images/villains_win.jpg" />
       <h1 className="resultHeading">Villains Win!</h1>
       <Link to="/start">
-        <button>Play Again</button>
+        <button className='startButton'>Play Again</button>
       </Link>
     </div>
 

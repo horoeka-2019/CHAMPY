@@ -37,7 +37,7 @@ class Villian extends React.Component {
       <React.Fragment>
         <h2>Hero's up, on a tuesday</h2>
 
-        <div onClick={this.expandShigaraki}>
+        <div onClick={this.expandShigaraki} onMouseOver={this.randomNumber}>
           <img src="/Images/Villians/Shigaraki.png" alt="deku" height={this.state.height0} width="Auto" />
         </div>
 

@@ -71,7 +71,9 @@ body{
 .resultHeading{
     color: blue;
     margin: auto;
-    text-align: center;  
+    text-align: center;
+    font-size:280%;
+    font-weight:bold;  
 }
 
 .villainsWin {
