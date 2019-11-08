@@ -10,7 +10,7 @@ class Hero extends React.Component {
       height3: 200,
       height4: 200
     },
-    herchoice: 0
+    choice: 0
   }
 
   expandDeku = (hero) => {
